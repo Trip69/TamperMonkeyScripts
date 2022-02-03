@@ -18,7 +18,7 @@
     function check_click_button(){
         //check_click_button.button=document.getElementById("button");
         check_click_button.els=document.getElementsByClassName("style-scope yt-button-renderer style-blue-text");
-        if( check_click_button.els.length===2
+        if( check_click_button.els.length>1
             && check_click_button.els.item(1).textContent==="Yes") {
             check_click_button.els.item(1).parentElement.click();
         }
