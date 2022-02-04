@@ -5,7 +5,8 @@ My collection of Tamper Monkey scripts.
 ## TM_YTMusic.js
 
 Tamper Money script to auto click "continue watching" popup when listening to you tube music and not interacting with
-the page for some time.
+the page for some time. <b>Note:</b> Due to Tamper monkey not being able to (yet) switch to a tab you need the tab
+playing music.youtube.com showing, I break the tab off chrome and leave it in the corner.
 
 ## TM_GoogleCAPTCHA.js
 
