@@ -37,7 +37,23 @@
     check_click_button.interval=null;
     check_click_button.els=null;
 
+    function skip_dislike(){
+        if(skip_dislike.button_next_el===null) {
+            skip_dislike.button_next_el=document.getElementById("left-controls").getElementsByClassName("next-button").item(0);
+        }
+        skip_dislike.el=document.getElementById("like-button-renderer");
+        if(skip_dislike.el.firstElementChild.getAttribute("aria-pressed")==="true") {
+            skip_dislike.button_next_el.click();
+        }
+    }
+    skip_dislike.interval=null;
+    skip_dislike.enabled=true;
+    skip_dislike.el=null;
+    skip_dislike.button_next_el=null;
+
     //Main
     let on_page = document.location.hostname === "music.youtube.com";
     check_click_button.interval=setInterval(check_click_button,1000);
+    if(skip_dislike.enabled)
+        skip_dislike.interval=setInterval(skip_dislike,1000);
 })();
