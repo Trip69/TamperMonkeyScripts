@@ -18,6 +18,8 @@
     function check_click_button(){
         if(check_click_button.reload && check_click_button.yes_clicked) {
             check_click_button.yes_clicked=false;
+            //to prevent spamming unsaved data dialogue if window is not minimised.
+            check_click_button.reload=false;
             document.location.reload();
         }
         check_click_button.els=document.getElementsByClassName("style-scope yt-button-renderer style-blue-text");
