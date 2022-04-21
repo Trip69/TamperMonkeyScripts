@@ -22,5 +22,5 @@
 
     //let url=document.location;
     //let interval = setInterval(openWindow,10*60*1000,url);
-    let interval = setInterval(reloadWindow,10*60*1000);
+    let interval = setInterval(reloadWindow,44*60*1000);
 })();
