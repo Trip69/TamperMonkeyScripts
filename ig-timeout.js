@@ -5,6 +5,7 @@
 // @description  Account Timeout Workaround
 // @author       Trip
 // @match        https://*.ig.com/*
+// @match        https://trading.bitfinex.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
